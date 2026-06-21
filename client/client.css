@@ -1,0 +1,283 @@
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 28px;
+  align-items: stretch;
+  padding: 56px 28px;
+  background: var(--bg);
+}
+
+.auth-card,
+.quiz-item,
+.summary-score,
+.summary-lines p,
+.safety-box,
+.resource-content {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+.auth-card {
+  padding: 34px;
+}
+
+.auth-hero {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--text);
+}
+
+.auth-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.04;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.auth-hero p {
+  margin: 18px 0 0;
+  max-width: 620px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 16px;
+  align-content: center;
+}
+
+.auth-form h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 760;
+}
+
+.auth-form label,
+.onboard-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.captcha-row {
+  display: grid;
+  grid-template-columns: 1fr 138px;
+  gap: 12px;
+  align-items: end;
+}
+
+.captcha-box {
+  min-height: 48px;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  color: var(--text);
+  background: rgba(255,255,255,0.86);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.captcha-box:hover {
+  transform: translateY(-1px);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.captcha-box span {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.captcha-box small {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+}
+
+.onboard-page {
+  min-height: 100vh;
+  padding: 56px 28px;
+  display: grid;
+  gap: 28px;
+  align-content: start;
+  background: var(--bg);
+}
+
+.onboard-page.single-step {
+  place-items: start center;
+}
+
+.onboard-head {
+  width: min(980px, 100%);
+  padding: 8px 4px 0;
+}
+
+.onboard-head h1 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.12;
+  font-weight: 780;
+}
+
+.onboard-head p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.step-card {
+  width: min(980px, 100%);
+}
+
+.wide-step {
+  width: min(1120px, 100%);
+}
+
+.onboard-form,
+.quiz-list,
+.summary-panel,
+.skill-bars,
+.summary-lines {
+  display: grid;
+  gap: 14px;
+}
+
+.field-block {
+  display: grid;
+  gap: 10px;
+}
+
+.field-label {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.quiz-item {
+  padding: 16px;
+  display: grid;
+  gap: 11px;
+}
+
+.quiz-item strong {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.choice-btn {
+  min-height: 42px;
+  padding: 10px 13px;
+  color: var(--text);
+  background: rgba(255,255,255,0.86);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: left;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.choice-btn:hover {
+  transform: translateY(-1px);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.choice-btn.selected {
+  background: #fff;
+  border-color: var(--line-strong);
+}
+
+.summary-score {
+  padding: 20px;
+}
+
+.summary-score strong {
+  font-size: 30px;
+}
+
+.summary-score span,
+.skill-row span,
+.skill-row strong {
+  color: var(--muted);
+}
+
+.summary-lines p {
+  margin: 0;
+  padding: 14px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 76px 1fr 52px;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.resource-content {
+  padding: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.safety-box {
+  margin-top: 14px;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.safety-box h4 {
+  width: 100%;
+  margin: 0 0 4px;
+}
+
+.safety-box span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.86);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+button:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1180px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-hero {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .auth-page,
+  .onboard-page {
+    padding: 22px 14px;
+  }
+
+  .captcha-row,
+  .skill-row {
+    grid-template-columns: 1fr;
+  }
+}

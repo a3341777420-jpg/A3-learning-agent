@@ -1,0 +1,651 @@
+{
+  "accounts": {
+    "13888888888": {
+      "user_id": "aaed4506-8363-4ebb-9603-000896b33074",
+      "nickname": "林同学",
+      "password_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    },
+    "13800138000": {
+      "user_id": "9107f5d2-99c7-4175-b160-206af976197a",
+      "nickname": "张同学",
+      "password_hash": "6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090"
+    },
+    "1391701": {
+      "user_id": "2a1108e5-f19c-4334-a38b-2a45cc8f19e7",
+      "nickname": "测试用户",
+      "password_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    }
+  },
+  "users": {
+    "aaed4506-8363-4ebb-9603-000896b33074": {
+      "id": "aaed4506-8363-4ebb-9603-000896b33074",
+      "nickname": "林同学",
+      "name": "林同学",
+      "phone": "13888888888",
+      "course": "大学英语六级",
+      "goal": "六级",
+      "onboarded": true,
+      "profile": {
+        "knowledge": "当前诊断为 A2 基础提升，综合得分约 55 分；专业背景为 计算机科学与技术，适合结合专业语境学习英语。",
+        "weakness": "主要薄弱项：语法、阅读、写作。后续资源会围绕这些能力优先生成。",
+        "style": "适合先诊断再练习：例句对比、短任务闯关、即时反馈、错因复盘。",
+        "pace": "用户计划：早上背单词\n。系统会把任务拆成词汇、输入理解、输出表达和复盘四段。",
+        "mistakes": "常见风险包括同义替换识别慢、语法细节不稳、写作句式单一或表达不够自然。",
+        "goal": "目标方向：大学英语六级。具体目标：六级。"
+      },
+      "messages": [
+        {
+          "role": "assistant",
+          "text": "我已经完成你的入学诊断，并生成了第一版个性化英语学习方案。"
+        },
+        {
+          "role": "assistant",
+          "text": "诊断总结：当前约为 A2 基础提升，薄弱项为 语法、阅读、写作。我会按你的目标和每日计划安排任务。"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-vocab",
+          "title": "个性化词汇 20 个",
+          "type": "词汇表",
+          "time": "15 分钟",
+          "done": false
+        },
+        {
+          "id": "task-input",
+          "title": "阅读定位与同义替换微课",
+          "type": "讲解文档",
+          "time": "18 分钟",
+          "done": false
+        },
+        {
+          "id": "task-quiz",
+          "title": "专项练习 8 题",
+          "type": "练习题库",
+          "time": "20 分钟",
+          "done": false
+        },
+        {
+          "id": "task-output",
+          "title": "写作句式升级改写",
+          "type": "输出训练",
+          "time": "22 分钟",
+          "done": false
+        }
+      ],
+      "resources": [
+        {
+          "id": "doc-core",
+          "title": "大学英语六级核心能力讲解文档",
+          "tag": "课程讲解文档",
+          "desc": "结合计算机科学与技术专业场景，讲解词汇、句法、阅读和输出的提分方法。",
+          "content": "先建立高频词和句法框架，再用短篇材料训练定位，最后进入输出表达。"
+        },
+        {
+          "id": "mindmap-skill",
+          "title": "个人英语能力思维导图",
+          "tag": "知识点思维导图",
+          "desc": "把词汇、语法、阅读、听力、写作、口语和目标考试连接成能力图谱。",
+          "content": "基础输入 -> 结构理解 -> 信息提取 -> 观点组织 -> 表达修正 -> 阶段测评。"
+        },
+        {
+          "id": "quiz-bank",
+          "title": "薄弱项专项题库",
+          "tag": "练习题库",
+          "desc": "根据入学诊断结果生成词汇、语法、阅读和写作练习。",
+          "content": "每日 8-12 题，包含选择、改写、阅读定位和短回答。"
+        },
+        {
+          "id": "writing-case",
+          "title": "写作/表达升级案例",
+          "tag": "写作实操案例",
+          "desc": "把普通表达改写成更自然、更符合目标场景的英语。",
+          "content": "good and easy -> practical, accessible and efficient in specific learning contexts。"
+        },
+        {
+          "id": "script-speaking",
+          "title": "听说跟读与口语脚本",
+          "tag": "多模态教学脚本",
+          "desc": "提供听力关键词、停顿跟读、复述和口语回答脚本。",
+          "content": "Listen for signpost words, repeat key chunks, then summarize with one claim and one reason."
+        },
+        {
+          "id": "vocab-list",
+          "title": "个性化核心词汇表",
+          "tag": "个性化词汇表",
+          "desc": "围绕 大学英语六级 和 计算机科学与技术 生成每日词汇。",
+          "content": "accessible, efficient, demonstrate, substantial, perspective, interaction, consequently, whereas"
+        }
+      ],
+      "path": [
+        {
+          "id": "day-0",
+          "day": "今天",
+          "title": "核心词汇 + 句式升级",
+          "progress": 20,
+          "active": true
+        },
+        {
+          "id": "day-1",
+          "day": "明天",
+          "title": "语法准确性训练",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-2",
+          "day": "第 3 天",
+          "title": "段落结构与衔接",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-3",
+          "day": "第 4 天",
+          "title": "限时写作改写",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-4",
+          "day": "第 5 天",
+          "title": "阶段作文评测",
+          "progress": 0,
+          "active": false
+        }
+      ],
+      "practice": {
+        "question": "请把下面句子升级成更自然的英语表达，注意连接结构和词汇替换。",
+        "prompt": "Learning English is useful. I want to study it every day.",
+        "answer": "",
+        "result": ""
+      },
+      "performance": [
+        {
+          "topic": "词汇",
+          "accuracy": 85,
+          "suggestion": "保持并提升"
+        },
+        {
+          "topic": "语法",
+          "accuracy": 45,
+          "suggestion": "继续专项"
+        },
+        {
+          "topic": "阅读",
+          "accuracy": 45,
+          "suggestion": "继续专项"
+        },
+        {
+          "topic": "写作",
+          "accuracy": 45,
+          "suggestion": "继续专项"
+        }
+      ],
+      "safety": {
+        "passed": true,
+        "blocked_terms": [],
+        "checks": [
+          {
+            "name": "敏感内容过滤",
+            "status": "通过"
+          },
+          {
+            "name": "学习场景相关性",
+            "status": "通过"
+          },
+          {
+            "name": "事实一致性提示",
+            "status": "已标注为学习建议"
+          },
+          {
+            "name": "输出格式校验",
+            "status": "通过"
+          }
+        ]
+      },
+      "created_at": "2026-06-17 11:19:00",
+      "updated_at": "2026-06-17 11:28:40",
+      "major": "计算机科学与技术",
+      "daily_plan": "早上背单词\n",
+      "diagnostic": {
+        "score": 55,
+        "level": "A2 基础提升",
+        "skill_scores": {
+          "词汇": 85,
+          "语法": 45,
+          "阅读": 45,
+          "写作": 45
+        },
+        "weak_skills": [
+          "语法",
+          "阅读",
+          "写作"
+        ],
+        "correct": 1
+      }
+    },
+    "9107f5d2-99c7-4175-b160-206af976197a": {
+      "id": "9107f5d2-99c7-4175-b160-206af976197a",
+      "nickname": "张同学",
+      "name": "张同学",
+      "phone": "13800138000",
+      "course": "英语学习",
+      "major": "计算机科学与技术",
+      "grade": "大二",
+      "goal": "提升专业英语阅读与求职面试表达",
+      "daily_hours": 1.5,
+      "onboarded": true,
+      "profile": {
+        "knowledge": "当前诊断为 B2 中高级，综合得分约 85 分；专业为 计算机科学与技术，年级为 大二。",
+        "weakness": "主要薄弱项：高阶表达、限时输出。后续资源会围绕这些能力优先生成。",
+        "style": "适合先诊断再练习：例句对比、短任务闯关、即时反馈、错因复盘。",
+        "pace": "每天计划学习约 1.5 小时，系统会把任务拆成词汇、输入理解、输出表达和复盘四段。",
+        "mistakes": "常见风险包括同义替换识别慢、语法细节不稳、写作句式单一或表达不够自然。",
+        "goal": "目标方向：综合英语提升。具体目标：提升专业英语阅读与求职面试表达。"
+      },
+      "messages": [
+        {
+          "role": "assistant",
+          "text": "你的学习方案已生成。接下来我会根据你的专业、年级、目标和每天学习时长动态调整。"
+        },
+        {
+          "role": "assistant",
+          "text": "你每天可学习 1.5 小时，我会据此设置任务节奏、资源密度和复盘频率。"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-vocab",
+          "title": "个性化词汇 20 个",
+          "type": "词汇表",
+          "time": "15 分钟",
+          "done": false
+        },
+        {
+          "id": "task-input",
+          "title": "英语水平薄弱项讲解",
+          "type": "讲解文档",
+          "time": "18 分钟",
+          "done": false
+        },
+        {
+          "id": "task-quiz",
+          "title": "专项练习 8 题",
+          "type": "练习题库",
+          "time": "20 分钟",
+          "done": false
+        },
+        {
+          "id": "task-output",
+          "title": "短句改写/口语复述",
+          "type": "输出训练",
+          "time": "22 分钟",
+          "done": false
+        }
+      ],
+      "resources": [
+        {
+          "id": "doc-core",
+          "title": "综合英语提升核心能力讲解文档",
+          "tag": "课程讲解文档",
+          "desc": "结合计算机科学与技术专业场景，讲解词汇、句法、阅读和输出的提分方法。",
+          "content": "先建立高频词和句法框架，再用短篇材料训练定位，最后进入输出表达。"
+        },
+        {
+          "id": "mindmap-skill",
+          "title": "个人英语能力思维导图",
+          "tag": "知识点思维导图",
+          "desc": "把词汇、语法、阅读、听力、写作、口语和目标考试连接成能力图谱。",
+          "content": "基础输入 -> 结构理解 -> 信息提取 -> 观点组织 -> 表达修正 -> 阶段测评。"
+        },
+        {
+          "id": "quiz-bank",
+          "title": "薄弱项专项题库",
+          "tag": "练习题库",
+          "desc": "根据入学诊断结果生成词汇、语法、阅读和写作练习。",
+          "content": "每日 8-12 题，包含选择、改写、阅读定位和短回答。"
+        },
+        {
+          "id": "writing-case",
+          "title": "写作/表达升级案例",
+          "tag": "写作实操案例",
+          "desc": "把普通表达改写成更自然、更符合目标场景的英语。",
+          "content": "good and easy -> practical, accessible and efficient in specific learning contexts。"
+        },
+        {
+          "id": "script-speaking",
+          "title": "听说跟读与口语脚本",
+          "tag": "多模态教学脚本",
+          "desc": "提供听力关键词、停顿跟读、复述和口语回答脚本。",
+          "content": "Listen for signpost words, repeat key chunks, then summarize with one claim and one reason."
+        },
+        {
+          "id": "vocab-list",
+          "title": "个性化核心词汇表",
+          "tag": "个性化词汇表",
+          "desc": "围绕 综合英语提升 和 计算机科学与技术 生成每日词汇。",
+          "content": "accessible, efficient, demonstrate, substantial, perspective, interaction, consequently, whereas"
+        }
+      ],
+      "path": [
+        {
+          "id": "day-0",
+          "day": "今天",
+          "title": "核心词汇 + 基础诊断",
+          "progress": 20,
+          "active": true
+        },
+        {
+          "id": "day-1",
+          "day": "明天",
+          "title": "语法与长句理解",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-2",
+          "day": "第 3 天",
+          "title": "阅读定位与同义替换",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-3",
+          "day": "第 4 天",
+          "title": "听力/输出专项",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-4",
+          "day": "第 5 天",
+          "title": "阶段测评与错题回收",
+          "progress": 0,
+          "active": false
+        }
+      ],
+      "practice": {
+        "question": "请把下面句子升级成更自然的英语表达，注意连接结构和词汇替换。",
+        "prompt": "Learning English is useful. I want to study it every day.",
+        "answer": "",
+        "result": ""
+      },
+      "performance": [
+        {
+          "topic": "词汇",
+          "accuracy": 85,
+          "suggestion": "保持并提升"
+        },
+        {
+          "topic": "语法",
+          "accuracy": 85,
+          "suggestion": "保持并提升"
+        },
+        {
+          "topic": "阅读",
+          "accuracy": 85,
+          "suggestion": "保持并提升"
+        },
+        {
+          "topic": "写作",
+          "accuracy": 85,
+          "suggestion": "保持并提升"
+        }
+      ],
+      "safety": {
+        "passed": true,
+        "blocked_terms": [],
+        "checks": [
+          {
+            "name": "敏感内容过滤",
+            "status": "通过"
+          },
+          {
+            "name": "学习场景相关性",
+            "status": "通过"
+          },
+          {
+            "name": "事实一致性提示",
+            "status": "已标注为学习建议"
+          },
+          {
+            "name": "输出格式校验",
+            "status": "通过"
+          }
+        ]
+      },
+      "diagnostic": {
+        "score": 85,
+        "level": "B2 中高级",
+        "skill_scores": {
+          "词汇": 85,
+          "语法": 85,
+          "阅读": 85,
+          "写作": 85
+        },
+        "weak_skills": [
+          "高阶表达",
+          "限时输出"
+        ],
+        "correct": 4,
+        "summary_lines": [
+          "测试等级：B2 中高级",
+          "总分：85",
+          "薄弱项：高阶表达、限时输出"
+        ]
+      },
+      "created_at": "2026-06-17 11:30:41",
+      "updated_at": "2026-06-17 11:30:41"
+    },
+    "2a1108e5-f19c-4334-a38b-2a45cc8f19e7": {
+      "id": "2a1108e5-f19c-4334-a38b-2a45cc8f19e7",
+      "nickname": "测试用户",
+      "phone": "1391701",
+      "major": "计算机",
+      "grade": "大二",
+      "goal": "通过六级并提升写作",
+      "daily_hours": 1.0,
+      "onboarded": true,
+      "diagnostic": {
+        "score": 85,
+        "level": "B2 中高级",
+        "skill_scores": {
+          "词汇": 85,
+          "语法": 85,
+          "阅读": 85,
+          "写作": 85
+        },
+        "weak_skills": [
+          "高级表达",
+          "限时输出"
+        ],
+        "summary_lines": [
+          "当前等级：B2 中高级",
+          "综合得分：85",
+          "优先提升：高级表达、限时输出"
+        ]
+      },
+      "profile": {
+        "knowledge": "当前诊断为 B2 中高级，综合得分 85。专业：计算机，年级：大二。",
+        "weakness": "阅读定位、同义替换识别、长难句主干提取。",
+        "style": "适合短任务、例句对比、即时反馈和错因复盘。",
+        "pace": "每天计划学习 1.0 小时，建议拆成词汇、输入理解、输出表达和复盘四段。",
+        "mistakes": "常见风险是同义替换识别慢、长难句主干抓取不稳、写作句式单一。",
+        "goal": "目标方向：大学英语六级。具体目标：通过六级并提升写作"
+      },
+      "messages": [
+        {
+          "role": "assistant",
+          "text": "你的个性化英语学习方案已经生成。"
+        },
+        {
+          "role": "assistant",
+          "text": "我会按每天 1.0 小时的节奏安排任务、资源和复盘。"
+        },
+        {
+          "role": "user",
+          "text": "我阅读比较慢"
+        },
+        {
+          "role": "assistant",
+          "text": "我已记录你的新反馈。接下来建议先处理：阅读定位、同义替换识别、长难句主干提取。 今天先完成一个输入任务，再做一个输出改写任务。"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-vocab",
+          "title": "个性化高频词 20 个",
+          "type": "词汇表",
+          "time": "15 分钟",
+          "done": false
+        },
+        {
+          "id": "task-reading",
+          "title": "阅读定位与同义替换微课",
+          "type": "讲解文档",
+          "time": "18 分钟",
+          "done": false
+        },
+        {
+          "id": "task-practice",
+          "title": "薄弱项专项练习 8 题",
+          "type": "练习题库",
+          "time": "20 分钟",
+          "done": false
+        },
+        {
+          "id": "task-output",
+          "title": "写作句式升级训练",
+          "type": "输出训练",
+          "time": "22 分钟",
+          "done": false
+        }
+      ],
+      "resources": [
+        {
+          "id": "res-doc",
+          "title": "大学英语六级核心能力讲解文档",
+          "tag": "课程讲解文档",
+          "desc": "讲解词汇、语法、阅读和输出能力的提分方法。"
+        },
+        {
+          "id": "res-map",
+          "title": "英语能力思维导图",
+          "tag": "知识点思维导图",
+          "desc": "把 计算机 场景和考试能力串成学习路径。"
+        },
+        {
+          "id": "res-bank",
+          "title": "薄弱项专项题库",
+          "tag": "练习题库",
+          "desc": "按诊断结果生成词汇、语法、阅读和写作练习。"
+        },
+        {
+          "id": "res-writing",
+          "title": "写作表达升级案例",
+          "tag": "写作实操案例",
+          "desc": "把普通表达改写为更自然、更正式的英文。"
+        },
+        {
+          "id": "res-speaking",
+          "title": "听说跟读脚本",
+          "tag": "多模态教学脚本",
+          "desc": "包含关键词、停顿跟读、复述和口语回答模板。"
+        },
+        {
+          "id": "res-vocab",
+          "title": "个性化核心词汇表",
+          "tag": "个性化词汇表",
+          "desc": "围绕目标考试和专业主题生成每日词汇。"
+        }
+      ],
+      "path": [
+        {
+          "id": "day-1",
+          "day": "今天",
+          "title": "高频词汇 + 阅读定位",
+          "progress": 0,
+          "active": true
+        },
+        {
+          "id": "day-2",
+          "day": "明天",
+          "title": "长难句拆解 + 同义替换",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-3",
+          "day": "第 3 天",
+          "title": "听力关键词捕捉",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-4",
+          "day": "第 4 天",
+          "title": "写作开头段与论点展开",
+          "progress": 0,
+          "active": false
+        },
+        {
+          "id": "day-5",
+          "day": "第 5 天",
+          "title": "阶段测评与错题回收",
+          "progress": 0,
+          "active": false
+        }
+      ],
+      "practice": {
+        "question": "请把下面句子升级成更适合英语写作的表达，注意连接结构和词汇替换。",
+        "prompt": "Online learning is good and easy. But it also has some problems.",
+        "answer": "Although online learning is accessible, it has challenges.",
+        "result": "不错。你加入了连接结构和更自然的替换词，表达更接近正式写作。"
+      },
+      "performance": [
+        {
+          "topic": "输出表达",
+          "accuracy": 86,
+          "suggestion": "保持并增加例证"
+        },
+        {
+          "topic": "词汇使用",
+          "accuracy": 86,
+          "suggestion": "结合语境记忆"
+        },
+        {
+          "topic": "语法衔接",
+          "accuracy": 82,
+          "suggestion": "练习连接词和从句"
+        }
+      ],
+      "safety": {
+        "passed": true,
+        "blocked_terms": [],
+        "checks": [
+          {
+            "name": "敏感内容过滤",
+            "status": "通过"
+          },
+          {
+            "name": "学习场景相关性",
+            "status": "通过"
+          },
+          {
+            "name": "输出格式校验",
+            "status": "通过"
+          }
+        ]
+      },
+      "created_at": "2026-06-17 17:41:29",
+      "updated_at": "2026-06-17 17:41:29"
+    }
+  },
+  "captchas": {
+    "a25cb44a-f475-4b70-b2a9-2f7d8b902051": {
+      "code": "XBA9",
+      "created_at": "2026-06-17 11:18:26"
+    }
+  }
+}
